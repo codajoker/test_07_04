@@ -48,6 +48,9 @@ export const App = () => {
             draggable: true,
             progress: undefined,
           });
+          axios.get(`/token`).then(({ data }) => {
+            setToken(data.token);
+          });
         })
         .catch(err => {
           console.log(err.message);
