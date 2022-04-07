@@ -1,4 +1,3 @@
-import { APIGet } from 'API';
 import axios from 'axios';
 import React from 'react';
 
